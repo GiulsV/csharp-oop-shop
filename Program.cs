@@ -2,7 +2,7 @@
 //Console.WriteLine("Hello, World!");
 
 /*Nel progetto csharp-oop-shop, creare la classe Prodotto che gestisce i prodotti dello shop. Un prodotto è caratterizzato da:
-codice(numero intero)
+-codice(numero intero)
 -nome
 -descrizione
 -prezzo
@@ -18,7 +18,7 @@ BONUS: create un metodo che restituisca il codice con un pad left di 0 per arriv
 
 
 //Istanza prodotto con tutte le informazioni
-Product prodottoprova = new Product("nome del prodotto di prova", "descrizione del prodotto di prova", 500, 22);
+Product prodottoprova = new Product("iPhone 14 ", "Core processore: 6-Core; Descrizione processore: A15 Bionic; Capacità di memoria: 256 GB", 1109, 22);
 
 //Stampa il codice prodotto
 Console.WriteLine(prodottoprova.GetProductCode());
@@ -122,9 +122,9 @@ public class Product
         Console.WriteLine("Codice prodotto: " + productCode);
         Console.WriteLine("Nome prodotto: " + name);
         Console.WriteLine("Descrizione prodotto: " + description);
-        Console.WriteLine("Prezzo netto: " + price + " euro");
+        Console.WriteLine("Prezzo: " + price + " euro");
         Console.WriteLine("Prezzo ivato: " + TaxPrice() + " euro");
         Console.WriteLine("Iva: " + iva);
-        Console.WriteLine("Codice con paad left: " + GetPadLeft());
+        Console.WriteLine("Codice con pad left: " + GetPadLeft());
     }
 }
