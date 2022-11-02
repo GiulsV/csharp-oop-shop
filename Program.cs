@@ -48,7 +48,7 @@ public class Product
     public string name;
     public string description;
     private double price;
-    private int iva = 25;
+    private int iva;
 
     //Costruttore
     public Product() {
@@ -95,7 +95,7 @@ public class Product
     }
     public double TaxPrice()
     {
-        return price + (price * 0.22);
+        return price + ( (price / 100) * iva);
     }
 
     public void FullName()
