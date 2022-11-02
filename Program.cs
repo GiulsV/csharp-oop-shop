@@ -18,7 +18,7 @@ BONUS: create un metodo che restituisca il codice con un pad left di 0 per arriv
 
 
 //Istanza prodotto con tutte le informazioni
-Product prodottoprova = new Product("iPhone 14 ", "Core processore: 6-Core; Descrizione processore: A15 Bionic; Capacità di memoria: 256 GB", 1109, 22);
+Product prodottoprova = new Product("iPhone 14 ", "Core processore: 6-Core; Descrizione processore: A15 Bionic; Capacità di memoria: 256 GB", 1109.00, 22);
 
 //Stampa il codice prodotto
 Console.WriteLine(prodottoprova.GetProductCode());
@@ -47,14 +47,14 @@ public class Product
     private int productCode;
     public string name;
     public string description;
-    private float price;
+    private double price;
     private int iva = 25;
 
     //Costruttore
     public Product() {
         productCode = new Random().Next(1, 100000);
     }
-    public Product(string name, string description, float price, int iva)
+    public Product(string name, string description, double price, int iva)
     {
         productCode = new Random().Next(1, 100000);
         this.name = name;
